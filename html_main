@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Compra de Ingressos Evento</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body background="qry0pwyv.png">
+    <div align="center">
+    <h1>Cadastro de Compra</h1><br>
+</div>
+<table border="3">
+<form action="dadosPessoais.jsp";>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>Nome: <input type="text" name="Nome"></p>
+        <p>Endereço: <input type="text" name="Endereço"></p>
+        <p>CPF: <input type="text" name="CPF"></p>
+        <p>Cidade: <input type="text" name="Cidade"></p>
+        <p>Estado: <label for="Estado"></label>
+        <select name="Estado" id="Estado" style="width: 170px;">
+            <option value="Goiás">Goiás</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+        </select></p>
+    </fieldset>
+</form><br><br>
+<form action="metodo.jsp">
+    <fieldset>
+        <legend>Seleção de Compra</legend><br>
+        <p>Selecione o Método de Ingresso:</p>
+        <input type="radio" name="ingresso"> Inteira 
+        <input type="radio" name="ingresso"> Meia-Entrada
+        <input type="radio" name="ingresso"> Doação de Alimentos <br><br>
+        <p>Selecione o Setor:</p>
+        <input type="radio" name="setor"> Pista
+        <input type="radio" name="setor"> Pista Premium
+        <input type="radio" name="setor"> Cadeira Inferior
+        <input type="radio" name="setor"> Cadeira Superior <br><br>
+        <input type="radio" name="setor"> Camarote 
+        <input type="radio" name="setor"> Atrás do Palco <br><br>
+        <p>Necessita-se de Assistência?</p>
+        <input type="radio" name="assit"> Sim
+        <input type="radio" name="assit"> Não
+    </fieldset>
+</form><br><br>
+<form action="preferencias.jsp">
+    <fieldset>
+        <legend>Preferência Musical</legend><br>
+        <input type="checkbox" name="areas" id="pop"> Pop
+        <input type="checkbox" name="areas" id="mpb"> MPB
+        <input type="checkbox" name="areas" id="rock"> Rock
+        <input type="checkbox" name="areas" id="house"> House
+        <input type="checkbox" name="areas" id="sertanejo"> Sertanejo<br><br><br>
+        <label for="feedback"></label>Nos dê um feedback!<br>
+        <textarea name="feedback" id="feedback" rows="4" cols="50">
+        </textarea><br><br>
+        <p><input type="submit" value="Enviar">
+        <input type="submit" value="Limpar"></p>
+    </fieldset>
+</form>
+</table>
+</body>
+</body>
+</html>
